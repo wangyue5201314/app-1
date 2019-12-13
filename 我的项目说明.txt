@@ -1,1 +1,85 @@
 54321466788899
+命令：git config --global user.name "Your Name"
+命令：git cinfig --global user.email email@exampie.
+通过：git config -l查看配置情况
+
+命令：git init        （初始化）
+命令：git status      （状态）
+
+git init                 （红色）
+git add .                 (绿色暂时)
+git commit -m"......"    （储存到库）
+
+Ctrl +L  清屏
+
+
+
+查看分支：git branch
+创建分支：git branch 名字
+切换分支：git checkout 名字、
+创建+切换分支：git checkout -b 名字
+删除分支：git branch -d 名字
+
+
+
+
+
+
+命令：git config --global user.name "Your Name"
+命令：git cinfig --global user.email email@exampie.
+通过：git config -l查看配置情况
+
+
+
+
+ssh-keygen -t rsa -C"email"
+进入c/users/.ssh/
+将.pub在notepad打开复制
+进入网页setting  ssh 粘贴
+
+cd e:
+mkdir projects
+cd projects
+mkdir sd-app
+cd sd-app
+touch readme.txt
+git status
+git init
+git add .
+git commit -m "add file"
+git checkout -b dev
+修改文档
+git checkout master
+git merge dev
+git status
+git add .
+git commit -m "update"
+git remote add origin https://
+git push -u origin master
+弹出网页 创建项目
+
+
+
+
+
+修改notepad内容
+进入到txt文件
+创建一个分支dev  git branch dev
+进入分支git checkout dev
+查看状态 git status  （红色）
+提交到暂存区  git add .（绿色）
+提交到版本库  git commit -m "..."
+返回到主分支  git checkout master
+合并分支并产生分支线路  git merge --no-ff -m "..." dev
+显示分支  git log --graph --pretty=oneline --abbrev-commit
+
+
+
+
+
+
+隐藏git stash
+取消隐藏 git stash pop
+隐藏列表 git stash list
+打开隐藏列表的某一个 git stash apply 编号
+把bug上的分支内容传递到dev分支上  git cherry-pick	
